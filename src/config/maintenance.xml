@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="maintenance_listener" class="Drawik\MaintenanceModeBundle\Event\MaintenanceListener">
+            <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="200"/>
+            <argument>%maintenance_mode.maintenance_config.enabled%</argument>
+            <argument>%maintenance_mode.maintenance_config.allowed_ips%</argument>
+            <argument>%maintenance_mode.maintenance_config.lock_file_path%</argument>
+        </service>
+        <service id="console.maintenance.enable" class="Drawik\MaintenanceModeBundle\Command\ModeEnable">
+            <tag name="console.command"/>
+            <argument>%maintenance_mode.maintenance_config.lock_file_path%</argument>
+        </service>
+        <service id="console.maintenance.disable" class="Drawik\MaintenanceModeBundle\Command\ModeDisable">
+            <tag name="console.command"/>
+            <argument>%maintenance_mode.maintenance_config.lock_file_path%</argument>
+        </service>
+    </services>
+</container>

@@ -1,0 +1,5 @@
+parameters:
+  maintenance_config:
+    enabled: 1
+    allowed_ips: [ '127.0.0.1' ]
+    lock_file_path: /tmp/maintenance_mode.lock

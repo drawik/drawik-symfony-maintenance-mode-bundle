@@ -1,0 +1,28 @@
+{
+	"name": "drawik/symfony-maintenance-mode-bundle",
+	"type": "symfony-bundle",
+	"version": "1.0.0",
+	"description": "Bundle that enables and disables maintenance mode",
+	"keywords": [
+		"Symfony",
+		"bundle",
+		"maintenance"
+	],
+	"homepage": "",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Dawid Cieśliczka",
+			"email": "dawid@andapro.pl"
+		}
+	],
+	"require": {
+		"php": "^8.2",
+		"symfony/framework-bundle": "^6.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Drawik\\MaintenanceModeBundle\\": "src/"
+		}
+	}
+}
