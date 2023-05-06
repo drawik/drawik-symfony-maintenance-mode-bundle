@@ -31,6 +31,6 @@ class ModeDisable extends Command
         }
         $output->writeln('<info>Maintenance mode disabled.</info>');
 
-        return 1;
+        return 0;
     }
 }
