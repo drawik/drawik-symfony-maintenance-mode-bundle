@@ -35,8 +35,6 @@ class MaintenanceListener
             return;
         }
 
-        // if is turned off (return)
-
         $requestEvent->setResponse(
             new Response('Maintenance mode.', Response::HTTP_SERVICE_UNAVAILABLE)
         );
