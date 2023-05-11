@@ -11,11 +11,11 @@ Bundle is prepared for Symfony ver. 6.
 Add to composer.json info about source location in repositories section:
 ``` 	
 "repositories": [
-		{
-			"url": "https://github.com/drawik/symfony-maintenance-mode-bundle.git",
-			"type": "git"
-		}
-	],
+    {
+        "url": "https://github.com/drawik/symfony-maintenance-mode-bundle.git",
+        "type": "git"
+    }
+],
 ```
 #### Composer Require
 
