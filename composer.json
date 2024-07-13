@@ -1,7 +1,7 @@
 {
 	"name": "drawik/symfony-maintenance-mode-bundle",
 	"type": "symfony-bundle",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"description": "Bundle that enables and disables maintenance mode",
 	"keywords": [
 		"Symfony",
@@ -18,7 +18,7 @@
 	],
 	"require": {
 		"php": "^8.2",
-		"symfony/framework-bundle": "^6.0"
+		"symfony/framework-bundle": "^6.0|^7.0"
 	},
 	"autoload": {
 		"psr-4": {
