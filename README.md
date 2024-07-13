@@ -2,22 +2,12 @@
 
 This Bundle enables put symfony into maintenance mode.
 
-Bundle is prepared for Symfony ver. 6.
+Bundle is prepared for Symfony ver. 6 and 7.
 
 
 ### Installation
 
-#### Repository
-Add to composer.json info about source location in repositories section:
-``` 	
-"repositories": [
-    {
-        "url": "https://github.com/drawik/symfony-maintenance-mode-bundle.git",
-        "type": "git"
-    }
-],
-```
-#### Composer Require
+### Composer Require
 
 To install this extension run `composer require drawik/symfony-maintenance-mode-bundle`
 
